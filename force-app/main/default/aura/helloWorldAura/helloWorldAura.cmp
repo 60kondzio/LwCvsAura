@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForRecordHome, force:hasRecordId, flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="greeting" type="String" default="World"/>
+
+    <lightning:card title="Hello World Aura Component" iconName="custom:custom14">
+        <div class="slds-card__body slds-card__body_inner slds-m-around_medium">
+            <p>Hello, {!v.greeting} !</p>
+            <lightning:input aura:id="myInput" label="Name" type="text" value="{!v.greeting}"/>
+        </div>
+    </lightning:card>
+</aura:component>
